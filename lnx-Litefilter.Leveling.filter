@@ -279,14 +279,6 @@ SetFontSize 35
 ### OPTIONAL RULE: Hide random bases
 # REMOVE THE BASES YOU --DO-- WANT TO SEE BEFORE SETTING TO HIDE
 
-# Hide white items
-Hide
-Rarity < Magic
-Quality == 0
-Sockets == 0
-AreaLevel < 65
-Class == "Life Flasks" "Mana Flasks" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Flails" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Sceptres" "Spears" "Shields" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Foci" "Quarterstaves" "Crossbows"
-
 # Hide
 # Rarity <= Magic
 # Class "Flask" "Body" "Helmet" "Boots" "Gloves" "Shields" "Quiver" "Mace" "Staff" "Quarter" "Bow" "Crossbow" "Wand" "Sceptre"
@@ -300,6 +292,27 @@ Class == "Life Flasks" "Mana Flasks" "Body Armours" "Boots" "Bows" "Claws" "Dagg
 # AreaLevel >= 65
 # DropLevel <= 50
 # SetBackgroundColor 0 0 0 125
+
+#--------------------------
+# MODIFIED RULES
+#--------------------------
+
+# Hide white items
+Hide
+Rarity < Magic
+Quality == 0
+Sockets == 0
+AreaLevel < 65
+Class "Life Flasks" "Mana Flasks" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Flails" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Sceptres" "Spears" "Shields" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Foci" "Quarterstaves" "Crossbows"Hide
+
+# Show white items on very low levels
+Show
+Rarity < Magic
+Quality == 0
+Sockets == 0
+AreaLevel < 10
+DropLevel <= 50
+Class "Life Flasks" "Mana Flasks" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Flails" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Sceptres" "Spears" "Shields" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Foci" "Quarterstaves" "Crossbows"
 
 #--------------------------
 # Meta
