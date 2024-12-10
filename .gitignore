@@ -1,0 +1,6 @@
+# Ignore PoE 2 files
+*.ini
+
+# Ignore PoE 2 folders
+poe2_production
+OnlineFilters
