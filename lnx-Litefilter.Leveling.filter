@@ -297,6 +297,14 @@ SetFontSize 35
 # MODIFIED RULES
 #--------------------------
 
+# Show white items on very low levels
+Show
+Rarity < Magic
+Quality == 0
+Sockets == 0
+AreaLevel <= 10
+Class "Life Flasks" "Mana Flasks" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Flails" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Sceptres" "Spears" "Shields" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Foci" "Quarterstaves" "Crossbows"
+
 # Hide white items
 Hide
 Rarity < Magic
@@ -304,15 +312,6 @@ Quality == 0
 Sockets == 0
 AreaLevel < 65
 Class "Life Flasks" "Mana Flasks" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Flails" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Sceptres" "Spears" "Shields" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Foci" "Quarterstaves" "Crossbows"Hide
-
-# Show white items on very low levels
-Show
-Rarity < Magic
-Quality == 0
-Sockets == 0
-AreaLevel < 10
-DropLevel <= 50
-Class "Life Flasks" "Mana Flasks" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Flails" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Sceptres" "Spears" "Shields" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Foci" "Quarterstaves" "Crossbows"
 
 #--------------------------
 # Meta
