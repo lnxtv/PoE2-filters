@@ -325,6 +325,7 @@ SetFontSize 38
 # Gloves bases (Energy Shield)
 Show
 BaseType "Adorned Gloves" "Expert Sombre Gloves" "Expert Jewelled Gloves" "Expert Intricate Gloves"
+Rarity > Magic
 ItemLevel > 60
 SetBorderColor 255 255 255
 SetBackgroundColor 255 255 255 40
@@ -332,6 +333,7 @@ SetFontSize 38
 # Helmet bases (Energy Shield)
 Show
 BaseType "Magus Tiara" "Expert Wicker Tiara" "Expert Chain Tiara" "Expert Feathered Tiara"
+Rarity > Magic
 ItemLevel > 60
 SetBorderColor 255 255 255
 SetBackgroundColor 255 255 255 40
@@ -339,6 +341,7 @@ SetFontSize 38
 # Boots bases (Energy Shield)
 Show
 BaseType "Elaborate Sandals" "Expert Wrapped Sandals" "Expert Silk Slippers" "Expert Feathered Sandals"
+Rarity > Magic
 ItemLevel > 60
 SetBorderColor 255 255 255
 SetBackgroundColor 255 255 255 40
@@ -373,6 +376,7 @@ SetFontSize 38
 # Crossbow bases
 Show
 BaseType "Advanced Bombard Crossbow" "Expert Bombard Crossbow"
+Rarity > Magic
 ItemLevel > 60
 SetBorderColor 255 255 255
 SetBackgroundColor 255 255 255 40
