@@ -63,7 +63,6 @@ Show
 BaseType "Uncut "
 SetTextColor 20 240 240
 SetBorderColor 20 240 240
-PlayAlertSound 2 300
 PlayEffect Cyan
 MinimapIcon 1 Cyan Triangle
 
@@ -118,14 +117,26 @@ PlayEffect Cyan Temp
 # Socketables and Special Character Equipment
 #--------------------------
 
-# Currency Tier A: Gemcutter, Annullment
+# Currency Tier A: Annullment, Orb of Chance
 Show
 Class "Currency"
-BaseType "Gemcutter's Prism" "Orb of Annulment" "Orb of Chance"
+BaseType "Orb of Annulment" "Orb of Chance"
 SetTextColor 255 255 255 255
 SetBorderColor 255 255 255 255
 SetBackgroundColor 240 90 35
 PlayAlertSound 1 300
+PlayEffect White
+MinimapIcon 1 White Circle
+SetFontSize 40
+
+# Currency Tier A: Gemcutter's Prism
+Show
+Class "Currency"
+BaseType "Gemcutter's Prism"
+SetTextColor 255 255 255 255
+SetBorderColor 255 255 255 255
+SetBackgroundColor 240 90 35
+PlayAlertSound 6 300
 PlayEffect White
 MinimapIcon 1 White Circle
 SetFontSize 40
@@ -181,7 +192,7 @@ MinimapIcon 2 Grey Circle
 
 Show
 Class "Currency"
-BaseType "Wisdom" "Shard"
+BaseType "Shard"
 
 # Unknown currency
 Show
@@ -297,13 +308,103 @@ SetFontSize 35
 # MODIFIED RULES
 #--------------------------
 
-# Hide white items on waystones
-Hide
+#--------------------------
+# Armour zone:
+# Body bases (Energy Shield)
+Show
+BaseType "Expert Keth Raiment" "Expert Altar Robe" "Arcane Robe" "Enlightened Robe"
+ItemLevel > 60
+SetBorderColor 255 255 255
+SetBackgroundColor 255 255 255 40
+SetFontSize 38
+# Gloves bases (Energy Shield)
+Show
+BaseType "Adorned Gloves" "Expert Sombre Gloves" "Expert Jewelled Gloves" "Expert Intricate Gloves"
+ItemLevel > 60
+SetBorderColor 255 255 255
+SetBackgroundColor 255 255 255 40
+SetFontSize 38
+# Helmet bases (Energy Shield)
+Show
+BaseType "Magus Tiara" "Expert Wicker Tiara" "Expert Chain Tiara" "Expert Feathered Tiara"
+ItemLevel > 60
+SetBorderColor 255 255 255
+SetBackgroundColor 255 255 255 40
+SetFontSize 38
+# Boots bases (Energy Shield)
+Show
+BaseType "Elaborate Sandals" "Expert Wrapped Sandals" "Expert Silk Slippers" "Expert Feathered Sandals"
+ItemLevel > 60
+SetBorderColor 255 255 255
+SetBackgroundColor 255 255 255 40
+SetFontSize 38
+# Foci bases (Energy Shield)
+Show
+BaseType "Expert Crystal Focus" "Expert Plumed Focus"
+ItemLevel > 60
+SetBorderColor 255 255 255
+SetBackgroundColor 255 255 255 40
+SetFontSize 38
+#--------------------------
+
+#--------------------------
+# Weapons zone:
+# Wand bases
+Show
+BaseType "Attuned Wand" "Siphoning Wand"
+ItemLevel > 60
+SetBorderColor 255 255 255
+SetBackgroundColor 255 255 255 40
+SetFontSize 38
+
+# Stave bases
+Show
+BaseType "Gelid Staff"
+ItemLevel > 60
+SetBorderColor 255 255 255
+SetBackgroundColor 255 255 255 40
+SetFontSize 38
+
+# Crossbow bases
+Show
+BaseType "Advanced Bombard Crossbow" "Expert Bombard Crossbow"
+ItemLevel > 60
+SetBorderColor 255 255 255
+SetBackgroundColor 255 255 255 40
+SetFontSize 38
+#--------------------------
+
+#--------------------------
+# Jewelry zone:
+# Amulet bases
+Show
+BaseType "Azure Amulet"
+ItemLevel > 60
+SetBorderColor 255 255 255
+SetBackgroundColor 255 255 255 40
+SetFontSize 38
+
+# HeadHunter's base
+Show
+BaseType "Heavy Belt"
 Rarity < Magic
+#--------------------------
+
+#--------------------------
+# Main Hides rule
+#--------------------------
+
+# Hide white items on high lvl
+Hide
+Rarity <= Magic
 Quality == 0
 Sockets == 0
-AreaLevel >= 65
 Class == "Life Flasks" "Mana Flasks" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Flails" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Sceptres" "Spears" "Shields" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Foci" "Quarterstaves" "Crossbows"
+
+# Hide Scroll of Wisdom
+Hide
+Class "Currency"
+BaseType "Wisdom"
 
 #--------------------------
 # Meta
