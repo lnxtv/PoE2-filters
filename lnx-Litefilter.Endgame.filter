@@ -194,6 +194,11 @@ Show
 Class "Currency"
 BaseType "Shard"
 
+# Hide Scroll of Wisdom
+Hide
+Class "Currency"
+BaseType "Wisdom"
+
 # Unknown currency
 Show
 Class "Currency"
@@ -400,11 +405,6 @@ Rarity <= Magic
 Quality == 0
 Sockets == 0
 Class == "Life Flasks" "Mana Flasks" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Flails" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Sceptres" "Spears" "Shields" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Foci" "Quarterstaves" "Crossbows"
-
-# Hide Scroll of Wisdom
-Hide
-Class "Currency"
-BaseType "Wisdom"
 
 #--------------------------
 # Meta
