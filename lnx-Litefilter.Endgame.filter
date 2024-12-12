@@ -253,7 +253,7 @@ Class "Rings" "Amulets" "Belts"
 SetFontSize 40
 
 Show
-Class "Rings" "Amulets" "Belts"
+Class "Rings" "Amulets"
 Rarity Magic
 SetFontSize 40
 
@@ -341,7 +341,6 @@ SetFontSize 38
 # Boots bases (Energy Shield)
 Show
 BaseType "Elaborate Sandals" "Expert Wrapped Sandals" "Expert Silk Slippers" "Expert Feathered Sandals"
-Rarity > Magic
 ItemLevel > 60
 SetBorderColor 255 255 255
 SetBackgroundColor 255 255 255 40
@@ -365,18 +364,10 @@ SetBorderColor 255 255 255
 SetBackgroundColor 255 255 255 40
 SetFontSize 38
 
-# Stave bases
-Show
-BaseType "Gelid Staff"
-ItemLevel > 60
-SetBorderColor 255 255 255
-SetBackgroundColor 255 255 255 40
-SetFontSize 38
-
 # Crossbow bases
 Show
 BaseType "Advanced Bombard Crossbow" "Expert Bombard Crossbow"
-Rarity > Magic
+Rarity >= Magic
 ItemLevel > 60
 SetBorderColor 255 255 255
 SetBackgroundColor 255 255 255 40
@@ -397,6 +388,9 @@ SetFontSize 38
 Show
 BaseType "Heavy Belt"
 Rarity < Magic
+SetBorderColor 255 255 255
+SetBackgroundColor 255 255 255 40
+SetFontSize 38
 #--------------------------
 
 #--------------------------
@@ -408,7 +402,7 @@ Hide
 Rarity <= Magic
 Quality == 0
 Sockets == 0
-Class == "Life Flasks" "Mana Flasks" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Flails" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Sceptres" "Spears" "Shields" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Foci" "Quarterstaves" "Crossbows"
+Class == "Life Flasks" "Mana Flasks" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Flails" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Sceptres" "Spears" "Shields" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Foci" "Quarterstaves" "Crossbows" "Belts"
 
 #--------------------------
 # Meta
