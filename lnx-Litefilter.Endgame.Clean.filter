@@ -61,10 +61,15 @@ SetBackgroundColor 0 0 0 180
 
 Show
 BaseType "Uncut "
+ItemLevel >= 18
 SetTextColor 20 240 240
 SetBorderColor 20 240 240
 PlayEffect Cyan
 MinimapIcon 1 Cyan Triangle
+
+Hide
+BaseType "Uncut "
+ItemLevel < 18
 
 #--------------------------
 # Socketables and Special Character Equipment
@@ -228,7 +233,13 @@ SetBorderColor 255 255 255
 PlayAlertSound 4 300
 PlayEffect White
 MinimapIcon 1 White Square
+WaystoneTier >= 10
 SetFontSize 40
+
+Hide
+BaseType "Waystone"
+Rarity <= Rare
+WaystoneTier < 10
 
 #--------------------------
 # Value Rares
@@ -250,6 +261,10 @@ MinimapIcon 1 Yellow Diamond
 Show
 Class "Amulets"
 Rarity Magic
+SetFontSize 40
+
+Show
+BaseType "Breach Ring"
 SetFontSize 40
 
 #--------------------------
@@ -311,8 +326,6 @@ SetFontSize 35
 # Hide white items on high lvl
 Hide
 Rarity <= Magic
-Quality == 0
-Sockets == 0
 Class == "Life Flasks" "Mana Flasks" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Flails" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Sceptres" "Spears" "Shields" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Foci" "Quarterstaves" "Crossbows" "Rings" "Amulets" "Belts"
 
 #--------------------------

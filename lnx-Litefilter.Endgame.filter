@@ -61,10 +61,15 @@ SetBackgroundColor 0 0 0 180
 
 Show
 BaseType "Uncut "
+ItemLevel >= 18
 SetTextColor 20 240 240
 SetBorderColor 20 240 240
 PlayEffect Cyan
 MinimapIcon 1 Cyan Triangle
+
+Hide
+BaseType "Uncut "
+ItemLevel < 18
 
 #--------------------------
 # Socketables and Special Character Equipment
@@ -228,7 +233,13 @@ SetBorderColor 255 255 255
 PlayAlertSound 4 300
 PlayEffect White
 MinimapIcon 1 White Square
+WaystoneTier >= 10
 SetFontSize 40
+
+Hide
+BaseType "Waystone"
+Rarity <= Rare
+WaystoneTier < 10
 
 #--------------------------
 # Value Rares
@@ -247,14 +258,30 @@ MinimapIcon 1 Yellow Diamond
 # Rings, Amulets, Belts
 #--------------------------
 
+# Jewelry zone:
+# Amulet and rings bases
 Show
-Rarity Normal
-Class "Rings" "Amulets" "Belts"
+BaseType "Azure Amulet" "Jade Amulet" "Stellar Amulet" "Solar Amulet" "Sapphire Ring" "Emerald Ring" "Prismatic Ring"
+Rarity == Normal
+ItemLevel > 60
+SetBorderColor 56 189 56 206
+SetBackgroundColor 49 201 57 140
 SetFontSize 40
 
+# HeadHunter's base
 Show
+BaseType "Heavy Belt"
+Rarity < Magic
+SetBorderColor 255 255 255
+SetBackgroundColor 255 255 255 40
+SetFontSize 38
+
+Show
+Rarity Normal
 Class "Rings" "Amulets"
-Rarity Magic
+
+Show
+BaseType "Breach Ring"
 SetFontSize 40
 
 #--------------------------
@@ -262,30 +289,30 @@ SetFontSize 40
 #--------------------------
 
 # Not working!
-Show
-Sockets > 0
-Rarity Normal
-SetBorderColor 200 200 200
-SetFontSize 35
+# Show
+# Sockets > 0
+# Rarity Normal
+# SetBorderColor 200 200 200
+# SetFontSize 35
 
-Show
-Quality > 10
-Rarity Normal
-SetBorderColor 200 200 200
-SetFontSize 35
+# Show
+# Quality > 10
+# Rarity Normal
+# SetBorderColor 200 200 200
+# SetFontSize 35
 
 # Not working!
-Show
-Sockets > 0
-Rarity Magic
-SetBorderColor 0 0 200
-SetFontSize 35
+# Show
+# Sockets > 0
+# Rarity Magic
+# SetBorderColor 0 0 200
+# SetFontSize 35
 
-Show
-Quality > 10
-Rarity Magic
-SetBorderColor 0 0 200
-SetFontSize 35
+# Show
+# Quality > 10
+# Rarity Magic
+# SetBorderColor 0 0 200
+# SetFontSize 35
 
 #--------------------------
 # OPTIONAL RULES
@@ -318,6 +345,7 @@ SetFontSize 35
 # Body bases (Energy Shield)
 Show
 BaseType "Expert Keth Raiment" "Expert Altar Robe" "Arcane Robe" "Enlightened Robe"
+Rarity Normal
 ItemLevel > 60
 SetBorderColor 255 255 255
 SetBackgroundColor 255 255 255 40
@@ -348,6 +376,7 @@ SetFontSize 38
 # Foci bases (Energy Shield)
 Show
 BaseType "Expert Crystal Focus" "Expert Plumed Focus"
+Rarity Normal
 ItemLevel > 60
 SetBorderColor 255 255 255
 SetBackgroundColor 255 255 255 40
@@ -374,24 +403,7 @@ SetBackgroundColor 255 255 255 40
 SetFontSize 38
 #--------------------------
 
-#--------------------------
-# Jewelry zone:
-# Amulet bases
-Show
-BaseType "Azure Amulet"
-ItemLevel > 60
-SetBorderColor 255 255 255
-SetBackgroundColor 255 255 255 40
-SetFontSize 38
 
-# HeadHunter's base
-Show
-BaseType "Heavy Belt"
-Rarity < Magic
-SetBorderColor 255 255 255
-SetBackgroundColor 255 255 255 40
-SetFontSize 38
-#--------------------------
 
 #--------------------------
 # Main Hides rule
@@ -400,9 +412,7 @@ SetFontSize 38
 # Hide white items on high lvl
 Hide
 Rarity <= Magic
-Quality == 0
-Sockets == 0
-Class == "Life Flasks" "Mana Flasks" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Flails" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Sceptres" "Spears" "Shields" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Foci" "Quarterstaves" "Crossbows" "Belts"
+Class "Life Flasks" "Mana Flasks" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Flails" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Sceptres" "Spears" "Shields" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Foci" "Quarterstaves" "Crossbows" "Belts"
 
 #--------------------------
 # Meta
