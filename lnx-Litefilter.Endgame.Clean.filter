@@ -271,31 +271,31 @@ SetFontSize 40
 # Salvagable Items
 #--------------------------
 
-# Not working!
-Show
-Sockets > 0
-Rarity Normal
-SetBorderColor 200 200 200
-SetFontSize 35
+# # Not working!
+# Show
+# Sockets > 0
+# Rarity Normal
+# SetBorderColor 200 200 200
+# SetFontSize 35
 
-Show
-Quality > 10
-Rarity Normal
-SetBorderColor 200 200 200
-SetFontSize 35
+# Show
+# Quality > 10
+# Rarity Normal
+# SetBorderColor 200 200 200
+# SetFontSize 35
 
-# Not working!
-Show
-Sockets > 0
-Rarity Magic
-SetBorderColor 0 0 200
-SetFontSize 35
+# # Not working!
+# Show
+# Sockets > 0
+# Rarity Magic
+# SetBorderColor 0 0 200
+# SetFontSize 35
 
-Show
-Quality > 10
-Rarity Magic
-SetBorderColor 0 0 200
-SetFontSize 35
+# Show
+# Quality > 10
+# Rarity Magic
+# SetBorderColor 0 0 200
+# SetFontSize 35
 
 #--------------------------
 # OPTIONAL RULES
