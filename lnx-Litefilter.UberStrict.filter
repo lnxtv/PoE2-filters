@@ -305,8 +305,8 @@ MinimapIcon 1 Yellow Diamond
 # Jewelry zone:
 # Amulet and rings bases
 Show
-BaseType "Azure Amulet" "Jade Amulet" "Stellar Amulet" "Solar Amulet" "Sapphire Ring" "Emerald Ring" "Prismatic Ring"
-Rarity == Normal
+BaseType "Azure Amulet" "Jade Amulet" "Stellar Amulet" "Solar Amulet" "Sapphire Ring" "Emerald Ring"
+Rarity Normal
 ItemLevel > 60
 SetBorderColor 56 189 56 206
 SetBackgroundColor 49 201 57 140
@@ -315,10 +315,10 @@ SetFontSize 40
 # HeadHunter's base
 Show
 BaseType "Heavy Belt"
-Rarity < Magic
-SetBorderColor 255 255 255
-SetBackgroundColor 255 255 255 40
-SetFontSize 38
+Rarity Normal
+SetBorderColor 56 189 56 206
+SetBackgroundColor 49 201 57 140
+SetFontSize 40
 
 Show
 Rarity Normal
@@ -327,6 +327,10 @@ Class "Rings" "Amulets"
 Show
 BaseType "Breach Ring"
 SetFontSize 40
+
+Hide
+Class "Rings" "Amulets" "Belts"
+Rarity < Rare
 
 #--------------------------
 # Salvagable Items
@@ -484,7 +488,7 @@ ItemLevel > 60
 # Hide white items on high lvl
 Hide
 Rarity <= Rare
-Class "Life Flasks" "Mana Flasks" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Flails" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Sceptres" "Spears" "Shields" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Foci" "Quarterstaves" "Crossbows" "Belts"
+Class "Life Flasks" "Mana Flasks" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Flails" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Sceptres" "Spears" "Shields" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Foci" "Quarterstaves" "Crossbows"
 
 #--------------------------
 # Meta
