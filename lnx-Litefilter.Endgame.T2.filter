@@ -61,7 +61,7 @@ SetBackgroundColor 0 0 0 180
 
 Show
 BaseType "Uncut "
-ItemLevel >= 18
+ItemLevel >= 19
 SetTextColor 20 240 240
 SetBorderColor 20 240 240
 PlayEffect Cyan
@@ -69,7 +69,7 @@ MinimapIcon 1 Cyan Triangle
 
 Hide
 BaseType "Uncut "
-ItemLevel < 18
+ItemLevel < 19
 
 #--------------------------
 # Socketables and Special Character Equipment
@@ -119,7 +119,7 @@ SetTextColor 0 240 190
 PlayEffect Cyan Temp
 
 Hide 
-BaseType " Rune" " Charm"
+BaseType " Rune" " Charm" "Orb of Transmutation" "Orb of Augmentation"
 
 #--------------------------
 # Socketables and Special Character Equipment
