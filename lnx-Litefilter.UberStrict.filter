@@ -225,10 +225,14 @@ SetBackgroundColor 65 20 80 200
 SetFontSize 38
 MinimapIcon 2 Purple Triangle
 
+Show
+Class "Currency"
+BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone"
+
 # Hide Scroll of Wisdom
 Hide
 Class "Currency"
-BaseType "Wisdom" "Shard" "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone"
+BaseType "Wisdom" "Shard"
 
 # Unknown currency
 Show
@@ -281,12 +285,12 @@ WaystoneTier >= 15
 SetFontSize 40
 
 Hide
-BaseType "Barya" "Ultimatum"
-
-Hide
 BaseType "Waystone"
 Rarity <= Rare
 WaystoneTier < 13
+
+Hide
+BaseType "Barya" "Ultimatum"
 
 #--------------------------
 # Value Rares
