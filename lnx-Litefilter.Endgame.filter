@@ -354,7 +354,7 @@ SetFontSize 40
 # Body bases (Energy Shield)
 Show
 BaseType "Expert Keth Raiment" "Expert Altar Robe" "Arcane Robe" "Enlightened Robe"
-Rarity Normal
+Rarity > Magic
 ItemLevel > 60
 SetBorderColor 255 255 255
 SetBackgroundColor 255 255 255 40
@@ -378,14 +378,7 @@ SetFontSize 38
 # Boots bases (Energy Shield)
 Show
 BaseType "Elaborate Sandals" "Expert Wrapped Sandals" "Expert Silk Slippers" "Expert Feathered Sandals"
-ItemLevel > 60
-SetBorderColor 255 255 255
-SetBackgroundColor 255 255 255 40
-SetFontSize 38
-# Foci bases (Energy Shield)
-Show
-BaseType "Expert Crystal Focus" "Expert Plumed Focus"
-Rarity Normal
+Rarity > Magic
 ItemLevel > 60
 SetBorderColor 255 255 255
 SetBackgroundColor 255 255 255 40
@@ -394,14 +387,6 @@ SetFontSize 38
 
 #--------------------------
 # Weapons zone:
-# Wand bases
-Show
-BaseType "Attuned Wand" "Siphoning Wand"
-ItemLevel > 60
-SetBorderColor 255 255 255
-SetBackgroundColor 255 255 255 40
-SetFontSize 38
-
 # Crossbow bases
 Show
 BaseType "Expert Bombard Crossbow"
