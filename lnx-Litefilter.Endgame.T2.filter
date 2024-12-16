@@ -152,7 +152,7 @@ SetFontSize 40
 # Currency Tier B: Vaal, Chaos, Exotic
 Show
 Class "Currency"
-BaseType "Vaal Orb" "Chaos Orb" "Lesser Jeweller's Orb" "Exotic" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy" "Orb of Chance"
+BaseType "Vaal Orb" "Chaos Orb" "Exotic" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy" "Orb of Chance"
 SetTextColor 255 207 132
 SetBorderColor 255 207 132
 SetBackgroundColor 76 51 12
@@ -160,6 +160,14 @@ PlayAlertSound 2 300
 PlayEffect White
 MinimapIcon 1 White Circle
 SetFontSize 40
+
+Show
+Class "Currency"
+BaseType "Lesser Jeweller's Orb"
+SetTextColor 255 207 132
+SetBorderColor 255 207 132
+SetBackgroundColor 76 51 12
+PlayEffect White
 
 # Currency Tier B: Exalt
 Show
