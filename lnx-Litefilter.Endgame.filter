@@ -190,10 +190,19 @@ MinimapIcon 2 Grey Circle
 
 Show
 Class "Currency"
-BaseType "Simulacrum Splinter" "Breach Splinter" " Artifact" 
+BaseType " Artifact" 
 SetTextColor 255 207 132
 SetBorderColor 255 207 132
 MinimapIcon 2 Grey Circle
+
+Show
+Class "Stackable Currency"
+BaseType "Simulacrum Splinter" "Breach Splinter"
+SetTextColor 255 255 255
+SetBorderColor 130 15 255
+SetBackgroundColor 65 20 80 200
+SetFontSize 38
+MinimapIcon 2 Purple Triangle
 
 Show
 Class "Currency"
