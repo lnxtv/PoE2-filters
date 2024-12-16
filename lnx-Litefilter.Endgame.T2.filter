@@ -181,12 +181,22 @@ PlayEffect Yellow
 MinimapIcon 1 Yellow Circle
 SetFontSize 40
 
+# Currency High tier
 Show
-Class "Currency"
-BaseType "Distilled" "Catalyst" "Essence of" "Omen of"
-SetTextColor 255 207 132
-SetBorderColor 255 207 132
-SetBackgroundColor 76 51 12
+BaseType "Greater Essence of" "Omen of" "Distilled Isolation" "Distilled Suffering" "Distilled Fear" "Distilled Despair" "Distilled Disgust"
+SetTextColor 255 0 0 255
+SetBorderColor 255 0 0 255
+SetBackgroundColor 255 255 255 255
+PlayAlertSound 6 300
+PlayEffect Red
+MinimapIcon 1 Red Star
+
+# Currency Regular tier
+Show
+BaseType "Distilled" "Catalyst" "Essence of"
+SetTextColor 190 178 135
+SetBorderColor 190 178 135
+SetBackgroundColor 20 20 0
 PlayAlertSound 2 300
 PlayEffect White
 MinimapIcon 1 White Circle
