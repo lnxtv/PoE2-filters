@@ -114,9 +114,12 @@ PlayEffect Cyan Temp
 
 # Special B Tier - Any Runes and Charms
 Show 
-BaseType " Rune" " Charm"
+BaseType "Golden Charm"
 SetTextColor 0 240 190
 PlayEffect Cyan Temp
+
+Hide 
+BaseType " Rune" " Charm"
 
 #--------------------------
 # Socketables and Special Character Equipment
@@ -183,7 +186,7 @@ MinimapIcon 1 White Circle
 # Currency Tier C: Vaal, Chaos, Exalt, Exotic
 Show
 Class "Currency"
-BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard" "Chance Shard"
+BaseType "Chance Shard"
 SetTextColor 255 207 132
 SetBorderColor 255 207 132
 MinimapIcon 2 Grey Circle
@@ -204,14 +207,10 @@ SetBackgroundColor 65 20 80 200
 SetFontSize 38
 MinimapIcon 2 Purple Triangle
 
-Show
-Class "Currency"
-BaseType "Shard"
-
 # Hide Scroll of Wisdom
 Hide
 Class "Currency"
-BaseType "Wisdom"
+BaseType "Wisdom" "Shard"
 
 # Unknown currency
 Show
@@ -239,16 +238,34 @@ BaseType "Waystone"
 Rarity >= Normal
 SetTextColor 255 255 255
 SetBorderColor 255 255 255
+PlayEffect White
+WaystoneTier == 13
+
+Show
+BaseType "Waystone"
+Rarity >= Normal
+SetTextColor 255 255 255
+SetBorderColor 255 255 255
+PlayEffect White
+MinimapIcon 1 White Square
+WaystoneTier == 14
+SetFontSize 38
+
+Show
+BaseType "Waystone"
+Rarity >= Normal
+SetTextColor 0 0 0
+SetBackgroundColor 235 235 235
 PlayAlertSound 4 300
 PlayEffect White
 MinimapIcon 1 White Square
-WaystoneTier >= 10
+WaystoneTier >= 15
 SetFontSize 40
 
 Hide
 BaseType "Waystone"
 Rarity <= Rare
-WaystoneTier < 10
+WaystoneTier < 13
 
 #--------------------------
 # Value Rares
