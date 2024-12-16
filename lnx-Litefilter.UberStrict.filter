@@ -228,7 +228,7 @@ MinimapIcon 2 Purple Triangle
 # Hide Scroll of Wisdom
 Hide
 Class "Currency"
-BaseType "Wisdom" "Shard"
+BaseType "Wisdom" "Shard" "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone"
 
 # Unknown currency
 Show
