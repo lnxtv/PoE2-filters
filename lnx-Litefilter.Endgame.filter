@@ -227,7 +227,7 @@ SetFontSize 40
 
 Show
 BaseType "Waystone"
-Rarity <= Rare
+Rarity >= Normal
 SetTextColor 255 255 255
 SetBorderColor 255 255 255
 PlayAlertSound 4 300
@@ -395,12 +395,11 @@ SetFontSize 38
 
 # Crossbow bases
 Show
-BaseType "Advanced Bombard Crossbow" "Expert Bombard Crossbow"
-Rarity >= Magic
-ItemLevel > 60
-SetBorderColor 255 255 255
-SetBackgroundColor 255 255 255 40
-SetFontSize 38
+BaseType "Expert Bombard Crossbow"
+ItemLevel >= 73
+SetBorderColor 56 189 56 206
+SetBackgroundColor 49 201 57 140
+SetFontSize 40
 #--------------------------
 
 
